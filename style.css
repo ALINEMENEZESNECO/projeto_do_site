@@ -1,0 +1,352 @@
+:root {
+    --cor-barras: hsla(332, 100%, 80%, 0.918);
+    --cor-principal: rgb(100, 33, 33) dark;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.conteiner.cima {
+    max-width: 1140px;
+    margin:auto;
+}
+
+.line {
+    background-color: var(--cor-barras);
+    width: 100%;
+    height: 15px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    padding: 10px;
+    width: 64px;
+    height: 64px;
+}
+
+.nome-empresa {
+    padding-top: 50px;
+    margin: 35px 25px 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--cor-principal);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.cabecalho-menu {
+    display: none;
+}
+
+.menu1 {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    font-size: 17px;
+    color: rgb(250, 250, 196);
+    padding: 15px 19px;
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu li:hover>a {
+    background-color: var(--cor-principal);
+    color: beige;
+}
+
+.submenu {
+    margin-left: -40px;
+    padding-top: 10px;
+    display: none;
+    position: absolute;
+}
+
+.menu li:hover>.submenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu a {
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(252, 252, 235);
+    background-color: var(--cor-principal);
+    align-content: end;
+}
+
+header {
+    background-color: #e487b3;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.banner {
+    background-image: url("../imagens/pexelssssss.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.container-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner h1 {
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding-top: 60px;
+    line-height: 70px;
+    color: var(--cor-principal);
+}
+
+.banner-imagem {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.banner-imagens img {
+    width: 148px;
+    height: 148px;
+    border: 4px solid var(--cor-barras);
+    margin: 20px;
+    box-shadow: 3px 3px 15px beige;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.textos {
+    background-color: rgba(214, 180, 200, 0.911);
+}
+
+.barra {
+    width: 200px;
+    height: 15px;
+}
+
+
+@media(min-width:768px) and (max-width:1024px) {
+    .conteiner {
+        margin: auto;
+        max-width: 1024px;
+    }
+
+    .conteiner-banner {
+        margin-left: 30px;
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .cabecalho-menu {
+        display: block;
+    }
+}
+
+@media(min-width:425px) and (max-width:767px) {
+    .conteiner {
+        margin: auto;
+        max-width: 767px;
+    }
+
+    .container-banner {
+        margin-left: 30px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        padding-top: 40px;
+        line-height: 40px;
+    }
+
+    .banner-imagens img {
+        width: 110px;
+        height: 110px;
+        margin: 10px;
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .cabecalho-menu {
+        display: block;
+    }
+
+    .cabecalho-menu img {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media(min-width:320px) and (max-width:424px) {
+    .conteiner {
+        margin: auto;
+        max-width: 425px;
+    }
+
+    .conteiner-banner {
+        margin-left: 30px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+        padding-top: 40px;
+        line-height: 25px;
+    }
+
+    .banner-imagens img {
+        width: 80px;
+        height: 80px;
+        margin: 7px;
+    }
+
+    .menu1 {
+        display: none;
+    }
+
+    .cabecalho-menu {
+        display: block;
+    }
+
+    .cabecalho-menu img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo img {
+        padding: 3px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .nome-empresa {
+        padding-top: 25px;
+        font-size: 15px;
+        margin: 20px 20px 40px;
+    }
+}
+
+footer {
+    background-color: #e79cce;
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.produtos article {
+    width: calc(20% - 20px);
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.produtos img {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 50px;
+}
+
+.produtos h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.produtos button {
+    background-color: #61284e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.produtos button:hover {
+    background-color: #61284e;
+}
+
+.tela-login{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #b44c80;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: #FFF;
+}
+
+.login-rodape{
+    background-color: #e484ac;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.barra-login{
+    width: 200px;
+    height: 500px;
+}
+
+input{
+    padding: 10px;
+    border: #000000;
+    outline: none;
+}
+
+.entrar{
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    padding:5px;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.administrativo{
+    color:#fff;
+    font-size: 14pt;
+}
